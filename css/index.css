@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'dejavu_sansbook';
+    src: url('../fonts/dejavu-sans.bold.ttf')
+}
+
+* {
+    font-family: 'dejavu_sansbook';
+}
+
+body {
+    margin: 0;
+}
+
+.uni-padding {
+    padding: 0 7%;
+}
+
+#topbar {
+    background-color: rgb(255, 255, 255);
+    padding-top: 1em;
+    padding-bottom: 1em;
+    overflow: auto;
+    box-shadow: -0.3em -0.3em 0.5em #83898d;
+}
+
+#first,
+.fa-search {
+    color: #607cff;
+}
+
+#second {
+    color: #15cfb5;
+}
+
+#navitems {
+    float: right;
+    margin: 0;
+}
+
+#navcontent {
+    margin: 0;
+}
+
+#brand {
+    float: left;
+    margin: 0;
+}
+
+.navitem {
+    font-size: 0.8em;
+    padding: 0.5em;
+}
+
+#address {
+    font-family: 'IBM Plex Sans', sans-serif !important;
+    font-family: 'Poppins', sans-serif !important;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    color: #696a8c;
+}
+
+#black-strong {
+    color: black;
+}
+
+.product-card {
+    padding: 5.5%;
+    box-shadow: 0em -0.1em 1em -0.5em #83898d;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+#product-view,
+#product-info {
+    display: inline;
+}
+
+#compare {
+    font-family: 'IBM Plex Sans', sans-serif !important;
+    font-family: 'Poppins', sans-serif !important;
+    color: #696a8c;
+    font-size: 0.7em;
+    text-align: center;
+    width: 65%;
+    max-width: 100%;
+    border: 0.1em solid #696a8c;
+}
+
+#rating-font {
+    font-family: 'IBM Plex Sans', sans-serif !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+#feature-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#carriers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.fa-star {
+    color: #ffcb00;
+}
+
+@media screen and (max-width: 425px) {
+    #topbar {
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navitem {
+        width: 100%;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width:426px) {
+    #topbar {
+        display: flex;
+    }
+}
+
+.footer {
+    position: absolute;
+}
